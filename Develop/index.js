@@ -34,17 +34,17 @@ function init() {
     },
     {
       type: 'input',
-      name: 'GithubUsername',
+      name: 'githubUsername',
       message: questions[1],
     },
     {
       type: 'input',
-      name: 'emailAddress',
+      name: 'email',
       message: questions[2],
     },
     {
       type: 'input',
-      name: 'Description',
+      name: 'description',
       message: questions[3],
     },
     {
@@ -55,7 +55,7 @@ function init() {
     },
     {
       type: 'input',
-      name: 'install',
+      name: 'installation',
       message: questions[5],
     },
     {
@@ -76,7 +76,7 @@ function init() {
   ])
 .then((answers) => {
     const readmeContent = gm.generateMarkdown(answers);
-    writeToFile('README.md', readmeContent);
+    writeToFile('./README-file-generator/README.md', readmeContent);
 
     // console.log(answers)
     
