@@ -6,23 +6,55 @@ const gm = require('./utils/generateMarkdown');
 const questions = [
   {
     type: 'input',
-    name: 'ProjectName',
-    message: "What is the project name?"
+    name: 'projectName',
+    message: "What is the project name?",
+    validate: (projectNameInput) => {
+      if (projectNameInput) {
+        return true;
+      } else {
+        console.log("Please enter your Project Name!");
+        return false;
+      }
+    },
   },
   {
     type: 'input',
-    name: 'githubUsername',
-    message: "What is your Github username"
+    name: 'githubUserName',
+    message: "What is your Github username",
+    validate: (githubUserNameInput) => {
+      if (githubUserNameInput) {
+        return true;
+      } else {
+        console.log("Please enter your Github username!");
+        return false;
+      }
+    },
   },
   {
     type: 'input',
     name: 'email',
-    message: "What is your email address"
-  },
+    message: "What is your email address",
+    validate: (emailInput) => {
+      if (emailInput) {
+        return true;
+      } else {
+        console.log("Please enter your email address!");
+        return false;
+      }
+    },
+  },  
   {
     type: 'input',
     name: 'description',
-    message: "Please write a short description of your project"
+    message: "Please write a short description of your project",
+    validate: (descriptionNInput) => {
+      if (descriptionNInput) {
+        return true;
+      } else {
+        console.log("Please write a description of your project!");
+        return false;
+      }
+    },
   },
   {
     type: 'list',
@@ -33,23 +65,55 @@ const questions = [
   {
     type: 'input',
     name: 'installation',
-    message: "What command should be run to install dependencies?"
+    message: "What command should be run to install dependencies?",
+    validate: (installationInput) => {
+      if (installationInput) {
+        return true;
+      } else {
+        console.log("Please enter what coomand should be run to install dependencies!");
+        return false;
+      }
+    },
   },
   {
     type: 'input',
     name: 'test',
-    message: "What command should be run to run the tests?"
+    message: "What command should be run to run the tests?",
+    validate: (testInput) => {
+      if (testInput) {
+        return true;
+      } else {
+        console.log("Please enter what command should be run to run the tests!");
+        return false;
+      }
+    },
   },
   {
     type: 'input',
     name: 'usage',
-    message: "What does the user need to know about using the repo?"
+    message: "What does the user need to know about using the repo?",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter some info of how using the repo!");
+        return false;
+      }
+    },
   },
   {
     type: 'input',
     name: 'contributing',
-    message: "What does the user need to know about the contributing to the repo?"
-  }
+    message: "What does the user need to know about the contributing to the repo?",
+    validate: (contributingInput) => {
+      if (contributingInput) {
+        return true;
+      } else {
+        console.log("Please enter contributing info!");
+        return false;
+      }
+    },
+  },    
 ]
 
 // TODO: Create a function to write README file
