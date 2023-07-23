@@ -4,17 +4,53 @@ const fs = require('fs');
 const gm = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
-    "What is the project name?",
-    "What is your Github username",
-    "What is your email address",
-    "Please write a short description of your project",
-    "What kind of license should your project have?",
-    "What command should be run to install dependencies?",
-    "What command should be run to run the tests?",
-    "What does the user need to know about using the repo?",
-    "What does the user need to know about the contributing to the repo?"
-
-];
+  {
+    type: 'input',
+    name: 'ProjectName',
+    message: "What is the project name?"
+  },
+  {
+    type: 'input',
+    name: 'githubUsername',
+    message: "What is your Github username"
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: "What is your email address"
+  },
+  {
+    type: 'input',
+    name: 'description',
+    message: "Please write a short description of your project"
+  },
+  {
+    type: 'list',
+    name: 'license',
+    message: "What kind of license should your project have?",
+    choices: ['MIT', 'APACHE2.0', 'GPL3.0', 'BSD3', 'None'],
+  },
+  {
+    type: 'input',
+    name: 'installation',
+    message: "What command should be run to install dependencies?"
+  },
+  {
+    type: 'input',
+    name: 'test',
+    message: "What command should be run to run the tests?"
+  },
+  {
+    type: 'input',
+    name: 'usage',
+    message: "What does the user need to know about using the repo?"
+  },
+  {
+    type: 'input',
+    name: 'contributing',
+    message: "What does the user need to know about the contributing to the repo?"
+  }
+]
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -24,61 +60,13 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {
-    inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'ProjectName',
-      message: questions[0],
-    },
-    {
-      type: 'input',
-      name: 'githubUsername',
-      message: questions[1],
-    },
-    {
-      type: 'input',
-      name: 'email',
-      message: questions[2],
-    },
-    {
-      type: 'input',
-      name: 'description',
-      message: questions[3],
-    },
-    {
-      type: 'list',
-      name: 'license',
-      message: questions[4],
-      choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
-    },
-    {
-      type: 'input',
-      name: 'installation',
-      message: questions[5],
-    },
-    {
-      type: 'input',
-      name: 'test',
-      message: questions[6],
-      },
-      {
-      type: 'input',
-      name: 'usage',
-      message: questions[7],
-      },
-      {
-       type: 'input',
-      name: 'contributing',
-      message: questions[8],
-      }
-  ])
-.then((answers) => {
-    const readmeContent = gm.generateMarkdown(answers);
-    writeToFile('./README-file-generator/README.md', readmeContent);
+   function init() {
+      inquirer
+      .prompt(questions)
+      .then((answers) => {
+        const readmeContent = gm.generateMarkdown(answers);
+        writeToFile('./README-file-generator/README.md', readmeContent);
 
-    // console.log(answers)
     
   });
 }
