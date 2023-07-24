@@ -12,7 +12,7 @@ This is a project where we generate a Professional README file using node.js pro
 
 ## Installation
 
-To install dependencies, run the following:
+To install dependencies, open a integrated terminal and run:
 
 npm i
 
