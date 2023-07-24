@@ -2,22 +2,36 @@
 
 ## Project Description
 
-This Project is a Weather Dashboard  where you can search for a city and get weather information sush as temperature, wind speed and humidity. It also shows a 5 days forecast so you can also see weather information of the next 5 days of your search. It also stores all searches in the local store showing a list of last shearches giving the user the option of going back to any city searched.
-
-## Installation
-
-n/a
-
-## Licence
-
-n/a
+This is a project where we generate a Professional README file using node.js prompt. This README generator will allow the user to answer a series of specific questions and create a professional complete README based on their responses. It will take a couple minutes and provide the developer with the ability to make their project complete and more professional.
 
 ## SCREENSHOTS
 
 ![Wesite page]()
 
-## Test and Deploy
+## Installation
 
-Github Deployment url: 
+To install dependencies, run the following:
 
-Github repo: Thiago Dantas - 
+npm i
+
+## Usage
+
+After installing the dependencies, run the application with:
+
+node index.js
+
+Follow demonstratuon video:
+
+## Licence
+
+n/a
+
+## Questions
+
+Questions about this repository? Please contact me at thiagoo.dantas11@gmail.com
+
+
+
+
+
+
