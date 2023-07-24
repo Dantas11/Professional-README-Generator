@@ -20,7 +20,7 @@ After installing the dependencies, run the application with:
 
 node index.js
 
-Follow demonstratuon video:
+Follow demonstration video for usage:
 
 ## Licence
 
