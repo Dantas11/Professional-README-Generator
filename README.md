@@ -6,9 +6,9 @@ This is a project where we generate a Professional README file using node.js pro
 
 ## SCREENSHOTS
 
-![Wesite page](https://github.com/Dantas11/Professional-README-Generator/blob/main/Develop/images/readme-generator.png)
+![Wesite page](https://github.com/Dantas11/Professional-README-Generator/blob/main/assets/images/readme-generator.png)
 
-![Wesite page](https://github.com/Dantas11/Professional-README-Generator/blob/main/Develop/images/readme-generator-2.png)
+![Wesite page](https://github.com/Dantas11/Professional-README-Generator/blob/main/assets/images/readme-generator-2.png)
 
 ## Installation
 
