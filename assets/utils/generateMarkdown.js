@@ -69,7 +69,7 @@ ${data.test}
 
 ${renderLicenseSection(data.license)}
 
-## Question
+## Questions
 
 Github link: https://github.com/${data.githubUserName}
 
