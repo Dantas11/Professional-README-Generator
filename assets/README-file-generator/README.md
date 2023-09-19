@@ -1,24 +1,24 @@
 
-# README generator
+# Professional README Generator
 
 ![badge](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
   
-This is a project to generate a readme
+This is a project to generate a README 
 
 ## Table of Contents
 
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [Contributing](#Contributing)
-* [Tests](#Tests)
-* [License](#License)
-* [Questions](#Questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
 
 ## Installation
 
-npm
+npm install
 
 ## Usage
 
@@ -26,11 +26,11 @@ This repo is just for demo
 
 ## Contributing
 
-This repo is just for demo and has not contribution
+This repo is just for demo and has no contribution
 
 ## Tests
 
-npm run test
+node index.js
 
 ## License 
 
